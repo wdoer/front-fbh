@@ -1,0 +1,179 @@
+include components/header.pug
+main 
+    section.homebanner-slider
+      .homebanner-swiper.swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            img(class="swiper-slide--img" src="/assets/img/homebanner-slider.png", alt="")
+            .swiper-slide--container
+              h1 Finance building Holding 
+              p Строительство, проектирование, монтаж и обслуживание инженерных сетей
+        .swiper-pagination
+    section.about
+      .container
+        h2 О нас
+        .about__box
+          .about__box-text
+            | Строительство, проектирование, монтаж и обслуживание систем отопления, #[br] водоснабжения, канализации, вентиляции и электросетей. #[br] Планировка квартир должна быть удобной и максимально выгодной для проживания. #[br] Физический комфорт играет немаловажную роль — звукоизоляция, тепло, влажность, #[br] вентиляция должны быть в должном виде и высокого качества. #[br]#[br] Также важна общественная инфраструктура — на первых этажах жилых домов могут размещаться #[br] рестораны, магазины, спортзалы, химчистки, детские центры.
+          .about__box-img
+            include ../assets/img/itemSVG.svg
+        .about-video
+          iframe(width='560' height='315' src='https://www.youtube.com/embed/4xyb_tA-uw0' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+        .about-features
+          .about-features__item
+            span 6
+            p Проектов на этапе реализации
+          .about-features__item
+            span 200
+            p Квалифицированных сотрудников
+          .about-features__item
+            span &gt;1000000
+            p м2 на обслуживании
+    section.construction
+      .container
+        h2 Строительство
+        .construction-carousel__wrapper
+          .construction-swiper.swiper-container
+            .swiper-wrapper
+              .construction-item.swiper-slide
+                include ../assets/img/itemSVG.svg
+                p.construction-item--name ЖК Life, Гостомель
+                p.construction-item-e-city г. Гостомель, ул. Остромирская, 49Г
+                p.construction-item--description Начало строительства: 2017г. #[br] Ввод в эксплуатацию первой очереди 2019г. #[br] Вторая очередь на этапе строительства.
+                a.construction-item--link(href="") Подробнее
+              .construction-item.swiper-slide
+                include ../assets/img/itemSVG.svg
+                p.construction-item--name ЖК Life, Гостомель
+                p.construction-item--city г. Гостомель, ул. Остромирская, 49Г
+                p.construction-item--description Начало строительства: 2017г. #[br] Ввод в эксплуатацию первой очереди 2019г. #[br] Вторая очередь на этапе строительства.
+                a.construction-item--link(href="") Подробнее
+              .construction-item.swiper-slide
+                include ../assets/img/itemSVG.svg
+                p.construction-item--name ЖК Life, Гостомель
+                p.construction-item--city г. Гостомель, ул. Остромирская, 49Г
+                p.construction-item--description Начало строительства: 2017г. #[br] Ввод в эксплуатацию первой очереди 2019г. #[br] Вторая очередь на этапе строительства.
+                a.construction-item--link(href="") Подробнее
+              .construction-item.swiper-slide
+                include ../assets/img/itemSVG.svg
+                p.construction-item--name ЖК Life, Гостомель
+                p.construction-item--city г. Гостомель, ул. Остромирская, 49Г
+                p.construction-item--description Начало строительства: 2017г. #[br] Ввод в эксплуатацию первой очереди 2019г. #[br] Вторая очередь на этапе строительства.
+                a.construction-item--link(href="") Подробнее
+          .construction-swiper-prev
+            include ../assets/img/prev.svg
+          .construction-swiper-next
+            include ../assets/img/next.svg
+    section.about.about--second
+      .container
+        h2 МОНТАЖ и обслуживание ИНЖЕНЕРНЫХ СЕТЕЙ
+        .about__box
+          .about__box-text
+            | В капитальном строительстве на начальном этапе всегда стоит глубокая разработка и дальнейшая реализация проектного решения. Особенно такое касается инженерных сетей. Это аксиома, без выполнения которой немыслимо начинать дело. Именно грамотная и максимально проработанная проектно-сметная документация является той основой, от которой зависит успешная реализация задуманного. Ведь без оценочных сведений о стоимости будущего объекта нельзя реально рассчитать объем предстоящих капитальных вложений. #[br]Высококлассные специалисты нашей компании занимаются разработками внешних и внутренних проектов. #[br]Этим на высоком профессиональном уровне занимаются специалисты ТОВ "Фінансовий Будівельний Холдинг".
+            a(href="").about__box-link Подробнее
+          .about__box-img
+            include ../assets/img/itemSVG.svg
+    section.about.about--second.about--third
+      .container
+        h2 обслуживание осбб
+        .about__box
+          .about__box-text
+            | В капитальном строительстве на начальном этапе всегда стоит глубокая разработка и дальнейшая реализация проектного решения. Особенно такое касается инженерных сетей. Это аксиома, без выполнения которой немыслимо начинать дело. Именно грамотная и максимально проработанная проектно-сметная документация является той основой, от которой зависит успешная реализация задуманного. Ведь без оценочных сведений о стоимости будущего объекта нельзя реально рассчитать объем предстоящих капитальных вложений. #[br]Высококлассные специалисты нашей компании занимаются разработками внешних и внутренних проектов. #[br]Этим на высоком профессиональном уровне занимаются специалисты ТОВ "Фінансовий Будівельний Холдинг".
+            a(href="").about__box-link Подробнее
+          .about__box-img
+            include ../assets/img/itemSVG.svg
+        .about-features
+          .about-features-item
+            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            p Аварийное обслуживание
+          .about-features-item
+            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            p Аварийное обслуживание
+          .about-features-item
+            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            p Аварийное обслуживание
+          .about-features-item
+            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            p Аварийное обслуживание
+          .about-features-item
+            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            p Аварийное обслуживание
+          .about-features-item
+            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            p Аварийное обслуживание
+          .about-features-item
+            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            p Аварийное обслуживание
+          .about-features-item
+            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            p Аварийное обслуживание
+        .about-cities
+          .about-city
+            img(src="/assets/img/about-city.jpg", alt="")
+            p ЖК "LIFE"
+          .about-city
+            img(src="/assets/img/about-city.jpg", alt="")
+            p ЖК "LIFE"
+          .about-city
+            img(src="/assets/img/about-city.jpg", alt="")
+            p ЖК "LIFE"
+          .about-city
+            img(src="/assets/img/about-city.jpg", alt="")
+            p ЖК "LIFE"
+    section.guarantee
+      .container
+        h2 гарантия качества
+        .guarantee__box
+          img(src="/assets/img/guarantee-img.png", alt="")
+          .guarantee__box-info
+            p Наша компания получила Национальный сертификат
+            p «Выбор потребителя 2018» за получение права первенства компании среди потребителей товаров и услуг Украины, что подтверждено финансово-экономическими показателями предприятия от Всеукраинского отраслевых аналитического центра.
+        form.guarantee-form
+          p Lorem ipsum dolor sit amet, consectetur.
+          .guarantee-form__box 
+            label
+              input(type="text" placeholder="Телефон*")
+            label
+              input(type="text" placeholder="E-mail*")
+            label
+              input(type="text" placeholder="Имя/Объект*")
+          input(type="submit" value="Отправить заявку")
+    section.about--third.about--four
+      .container
+        h2 С кем работаем
+        .about-cities
+          .about-city
+            img(src="/assets/img/about-city.jpg", alt="")
+            p ЖК "LIFE"
+          .about-city
+            img(src="/assets/img/about-city.jpg", alt="")
+            p ЖК "LIFE"
+          .about-city
+            img(src="/assets/img/about-city.jpg", alt="")
+            p ЖК "LIFE"
+          .about-city
+            img(src="/assets/img/about-city.jpg", alt="")
+            p ЖК "LIFE"
+        a(href="").about--btn Подробнее
+    section.blog
+      .container 
+        h2 Блог
+        .blog-items
+          .blog-item
+            include ../assets/img/itemSVG.svg
+            .blog-item__box
+              p Выбор потребителя 2018
+              p Наша компания получила Национальный сертификат «Выбор потребителя 2018» за получение права первенства компании среди потребителей товаров и услуг Украины, что подтверждено финансово-экономическими показателями предприятия от Всеукраинского отраслевых аналитического центра.
+              a(href="").about--btn Подробнее
+          .blog-item
+            include ../assets/img/itemSVG.svg
+            .blog-item__box
+              p Выбор потребителя 2018
+              p Наша компания получила Национальный сертификат «Выбор потребителя 2018» за получение права первенства компании среди потребителей товаров и услуг Украины, что подтверждено финансово-экономическими показателями предприятия от Всеукраинского отраслевых аналитического центра.
+              a(href="").about--btn Подробнее
+          .blog-item
+            include ../assets/img/itemSVG.svg
+            .blog-item__box
+              p Выбор потребителя 2018
+              p Наша компания получила Национальный сертификат «Выбор потребителя 2018» за получение права первенства компании среди потребителей товаров и услуг Украины, что подтверждено финансово-экономическими показателями предприятия от Всеукраинского отраслевых аналитического центра.
+              a(href="").about--btn Подробнее
+include components/footer.pug
