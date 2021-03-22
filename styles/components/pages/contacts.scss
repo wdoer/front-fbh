@@ -1,0 +1,85 @@
+.contacts {
+    margin-top: 65px;
+    margin-bottom: -5px;
+    h2 {
+        margin-bottom: 40px;
+    }
+    &-item {
+        &s {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        margin-bottom: 46px;
+        &:last-child {
+            margin-bottom: 65px;
+        }
+        p:first-child {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #1E1E1E;
+            margin:0 auto 13px;
+        }
+        p:last-child {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+            line-height: 29px;
+            text-align: center;
+            color: #1E1E1E;
+            img {
+                order: -1;
+                margin-right: 24px;
+            }
+        }
+        ul {
+            max-width: 270px;
+            width: 100%;
+            margin: 0 auto;
+            padding-left: 25px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 33px;
+                height: 33px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                margin: auto 0;
+                background: url('/assets/img/contacts-phone.svg');
+                background-size: contain;
+            }
+        }
+        ul li{
+            max-width: 216px;
+            width: 100%;
+            margin-left: auto;
+            font-size: 24px;
+            line-height: 29px;
+            list-style: none;
+            a {
+                color: #1E1E1E;
+                text-decoration: none;
+            }
+        }
+    }
+    &-form {
+        margin: 0 auto 90px;
+        img {
+            width: 100%;
+            min-height: 180px;
+            margin-bottom: 17px;
+        }
+        .guarantee-form__box {
+            max-width: 1086px;
+            margin: 0 auto 23px;
+        }
+    }
+    iframe {
+        width: 100%;
+        min-height: 500px;
+    }
+}
