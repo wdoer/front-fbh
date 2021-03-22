@@ -1,7 +1,7 @@
 <figure>
-  <svg class="figure__svg" viewBox="0 0 228 161">
-    <defs><linearGradient id="grad" gradientUnits="userSpaceOnUse" x1="0" y1="100%" x2="100%" y2="0"><stop offset="0" stop-color="#1A2E58"/><stop offset="1" stop-color="#4370A7"/></linearGradient><mask id="image-mask"><path d="M216,161H12A12,12,0,0,1,0,149V43.87A12,12,0,0,1,8.48,32.4l102-31.32a12.06,12.06,0,0,1,7,0l102,31.32A12,12,0,0,1,228,43.87V149A12,12,0,0,1,216,161Z" fill="#fff" stroke="#000" stroke-width="6"/></mask></defs>
-    <image preserveAspectRatio="xMidYMid slice" mask="url(#image-mask)" href="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" height="100%" width="100%"/>
-    <path class="figure__stroke" stroke-dasharray="280 315" stroke-width="2px" d="M216,161H12A12,12,0,0,1,0,149V43.87A12,12,0,0,1,8.48,32.4l102-31.32a12.06,12.06,0,0,1,7,0l102,31.32A12,12,0,0,1,228,43.87V149A12,12,0,0,1,216,161Z" fill="none" stroke="url(#grad)"/>
-  </svg>
+    <svg class="figure__svg" viewBox="0 0 228 161">
+        <defs><linearGradient id="grad" gradientUnits="userSpaceOnUse" x1="0" y1="100%" x2="100%" y2="0"><stop offset="0" stop-color="#1A2E58"/><stop offset="1" stop-color="#4370A7"/></linearGradient><mask id="image-mask"><path d="M216,161H12A12,12,0,0,1,0,149V43.87A12,12,0,0,1,8.48,32.4l102-31.32a12.06,12.06,0,0,1,7,0l102,31.32A12,12,0,0,1,228,43.87V149A12,12,0,0,1,216,161Z" fill="#fff" stroke="#000" stroke-width="6"/></mask></defs>
+        <image preserveAspectRatio="xMidYMid slice" mask="url(#image-mask)" href="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" height="100%" width="100%"/>
+        <path class="figure__stroke" stroke-dasharray="280 315" stroke-width="2px" d="M216,161H12A12,12,0,0,1,0,149V43.87A12,12,0,0,1,8.48,32.4l102-31.32a12.06,12.06,0,0,1,7,0l102,31.32A12,12,0,0,1,228,43.87V149A12,12,0,0,1,216,161Z" fill="none" stroke="url(#grad)"/>
+    </svg>
 </figure>
