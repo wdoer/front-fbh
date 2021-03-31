@@ -1,0 +1,123 @@
+.jobs-post{
+  padding-top: 64px;
+  &s {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 1005px;
+    margin: 0 auto 64px;
+    min-height: 400px;
+    max-height: 400px;
+  }
+  &-item {
+    max-width: 178px;
+    width: 100%;
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      animation: jobsItemOpacity 2s both;
+      filter: blur(8px);
+    }
+    &--active {
+      max-width: 235px;
+      height: 400px;
+      img {
+        object-fit: contain;
+        object-position: bottom;
+        filter: blur(0px);
+      }
+    }
+  }
+  &-content {
+    max-width: 950px;
+    margin: 0 auto 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &-item {
+      max-width: 160px;
+      margin: 0 30px 6px 0;
+      &:last-child {
+        margin-right: 0px;
+      }
+      &-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #1E1E1E;
+        margin-bottom: 4px;
+      }
+      &-title+p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1E1E1E;
+      }
+    }
+  }
+  &--guarantee {
+    padding-top: 210px;
+    padding-bottom: 64px;
+    .guarantee-form {
+      margin-bottom: 0;
+      p {
+        margin-bottom: 12px;
+      }
+      &__box {
+        flex-direction: column;
+        label {
+          max-width: 730px;
+          height: 50px;
+          width: 100%;
+          margin-bottom: 7px;
+          select {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            background: #fff;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #989898;
+            position: relative;
+            appearance: none;
+            &:focus {
+              outline: 0;
+            }
+          }
+          .select-box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 16px;
+              height: 10px;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto 0 auto auto;
+              z-index: 5;
+              background-image: url('../img/jobsPostFormArrow.svg');
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes jobsItemOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

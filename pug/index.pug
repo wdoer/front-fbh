@@ -4,7 +4,7 @@ main
       .homebanner-swiper.swiper-container
         .swiper-wrapper
           .swiper-slide
-            img(class="swiper-slide--img" src="/assets/img/homebanner-slider.png", alt="")
+            img(class="swiper-slide--img" src="assets/img/homebanner-slider.png", alt="")
             .swiper-slide--container
               h1 Finance building Holding 
               p Строительство, проектирование, монтаж и обслуживание инженерных сетей
@@ -32,13 +32,13 @@ main
     section.construction
       .container
         h2 Строительство
-        .construction-carousel__wrapper
+        .construction-carousel__wrapper#randomParentLine
           .construction-swiper.swiper-container
             .swiper-wrapper
               .construction-item.swiper-slide
                 include ../assets/img/itemSVG.svg
                 p.construction-item--name ЖК Life, Гостомель
-                p.construction-item-e-city г. Гостомель, ул. Остромирская, 49Г
+                p.construction-item--city г. Гостомель, ул. Остромирская, 49Г
                 p.construction-item--description Начало строительства: 2017г. #[br] Ввод в эксплуатацию первой очереди 2019г. #[br] Вторая очередь на этапе строительства.
                 a.construction-item--link(href="") Подробнее
               .construction-item.swiper-slide
@@ -63,6 +63,7 @@ main
             include ../assets/img/prev.svg
           .construction-swiper-next
             include ../assets/img/next.svg
+        .construction-link Подробнее
     section.about.about--second
       .container
         h2 МОНТАЖ и обслуживание ИНЖЕНЕРНЫХ СЕТЕЙ
@@ -70,6 +71,7 @@ main
           .about__box-text
             | В капитальном строительстве на начальном этапе всегда стоит глубокая разработка и дальнейшая реализация проектного решения. Особенно такое касается инженерных сетей. Это аксиома, без выполнения которой немыслимо начинать дело. Именно грамотная и максимально проработанная проектно-сметная документация является той основой, от которой зависит успешная реализация задуманного. Ведь без оценочных сведений о стоимости будущего объекта нельзя реально рассчитать объем предстоящих капитальных вложений. #[br]Высококлассные специалисты нашей компании занимаются разработками внешних и внутренних проектов. #[br]Этим на высоком профессиональном уровне занимаются специалисты ТОВ "Фінансовий Будівельний Холдинг".
             a(href="").about__box-link Подробнее
+          a(href="").about__box-link--mobile.about__box-link Подробнее
           .about__box-img
             include ../assets/img/itemSVG.svg
     section.about.about--second.about--third
@@ -83,47 +85,47 @@ main
             include ../assets/img/itemSVG.svg
         .about-features
           .about-features-item
-            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            img(src="assets/img/iconAboutFeaturesItem.svg", alt="")
             p Аварийное обслуживание
           .about-features-item
-            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            img(src="assets/img/iconAboutFeaturesItem.svg", alt="")
             p Аварийное обслуживание
           .about-features-item
-            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            img(src="assets/img/iconAboutFeaturesItem.svg", alt="")
             p Аварийное обслуживание
           .about-features-item
-            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            img(src="assets/img/iconAboutFeaturesItem.svg", alt="")
             p Аварийное обслуживание
           .about-features-item
-            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            img(src="assets/img/iconAboutFeaturesItem.svg", alt="")
             p Аварийное обслуживание
           .about-features-item
-            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            img(src="assets/img/iconAboutFeaturesItem.svg", alt="")
             p Аварийное обслуживание
           .about-features-item
-            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            img(src="assets/img/iconAboutFeaturesItem.svg", alt="")
             p Аварийное обслуживание
           .about-features-item
-            img(src="/assets/img/iconAboutFeaturesItem.svg", alt="")
+            img(src="assets/img/iconAboutFeaturesItem.svg", alt="")
             p Аварийное обслуживание
         .about-cities
           .about-city
-            img(src="/assets/img/about-city.jpg", alt="")
+            img(src="assets/img/about-city.jpg", alt="")
             p ЖК "LIFE"
           .about-city
-            img(src="/assets/img/about-city.jpg", alt="")
+            img(src="assets/img/about-city.jpg", alt="")
             p ЖК "LIFE"
           .about-city
-            img(src="/assets/img/about-city.jpg", alt="")
+            img(src="assets/img/about-city.jpg", alt="")
             p ЖК "LIFE"
           .about-city
-            img(src="/assets/img/about-city.jpg", alt="")
+            img(src="assets/img/about-city.jpg", alt="")
             p ЖК "LIFE"
     section.guarantee
       .container
         h2 гарантия качества
         .guarantee__box
-          img(src="/assets/img/guarantee-img.png", alt="")
+          img(src="assets/img/guarantee-img.png", alt="")
           .guarantee__box-info
             p Наша компания получила Национальный сертификат
             p «Выбор потребителя 2018» за получение права первенства компании среди потребителей товаров и услуг Украины, что подтверждено финансово-экономическими показателями предприятия от Всеукраинского отраслевых аналитического центра.
@@ -142,16 +144,16 @@ main
         h2 С кем работаем
         .about-cities
           .about-city
-            img(src="/assets/img/about-city.jpg", alt="")
+            img(src="assets/img/about-city.jpg", alt="")
             p ЖК "LIFE"
           .about-city
-            img(src="/assets/img/about-city.jpg", alt="")
+            img(src="assets/img/about-city.jpg", alt="")
             p ЖК "LIFE"
           .about-city
-            img(src="/assets/img/about-city.jpg", alt="")
+            img(src="assets/img/about-city.jpg", alt="")
             p ЖК "LIFE"
           .about-city
-            img(src="/assets/img/about-city.jpg", alt="")
+            img(src="assets/img/about-city.jpg", alt="")
             p ЖК "LIFE"
         a(href="").about--btn Подробнее
     section.blog

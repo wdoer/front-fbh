@@ -1,0 +1,101 @@
+.portfolio {
+  padding-top: 64px;
+  h2 {
+    margin-bottom: 54px;
+  }
+  &-category {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1062px;
+      margin: 0 auto 40px;
+    }
+    li {
+      max-width: 189px;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 22px;
+      color: #1E1E1E;
+      list-style: none;
+      text-align: center;
+      margin-right: 30px;
+      position: relative;
+      &.active {
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background: linear-gradient(90deg, #1A2D57 0%, #3667A1 100%);
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      color: #1E1E1E;
+      text-decoration: none;
+    }
+  }
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1110px;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-bottom: 31px;
+  }
+  &-item {
+    margin: 0 30px 34px 0;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 180px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, rgba(26, 45, 87, 0.7) 0%, rgba(54, 103, 161, 0.7) 100%);
+      transition: all 300ms;
+    }
+    .portfolio .about--third &--hidden {
+      opacity: 0;
+      position: absolute;
+      transition: all 300ms;
+      width: 100%;
+      height: 180px;
+      padding: 0px 10px;
+      top: 0;
+      left: 0;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      z-index: 5;
+    }
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+      .portfolio-item--hidden {
+        opacity: 1;
+      }
+    }
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

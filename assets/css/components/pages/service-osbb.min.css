@@ -1,0 +1,37 @@
+.service-osbb {
+    padding-top: 64px;
+    padding-bottom: 15px;
+}
+.service-osbb h2 {
+    margin-bottom: 100px;
+}
+.service-osbb .about__box {
+    margin: 0 auto 75px;
+}
+.service-osbb .about-features {
+    max-width: 965px;
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+}
+.service-osbb .about-features-item {
+    max-width: 210px;
+    margin: 0 auto 85px;
+    text-align: center;
+}
+.service-osbb .about-features-item img {
+    margin: 0 auto 20px;
+}
+.service-osbb .about-features-item p {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    color: #1e1e1e; 
+    text-align: center;
+
+    align-items: center;
+}
+.service-osbb--third {
+    padding-bottom: 100px;
+}

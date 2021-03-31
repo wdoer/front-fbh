@@ -35,7 +35,7 @@
     width: 100%;
     height: 527px;
     margin: -105px auto 72px 0; 
-    background: url('/assets/img/about-us-history.svg');
+    background: url('../img/about-us-history.svg');
     background-size: 100% 100%;
 }
 .history__box p {
@@ -86,7 +86,7 @@
     width: 12px;
     height: 12px;
     margin: auto auto auto 0; 
-    background: url('/assets/img/documents-icon.svg');
+    background: url('../img/documents-icon.svg');
     background-repeat: no-repeat;
     background-size: contain;
     content: '';

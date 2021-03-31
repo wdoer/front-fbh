@@ -1,0 +1,75 @@
+include components/header.pug
+main 
+  section.services-post
+    .container
+      h2 Проектирование под ключ
+      .services-post__box
+        include ../assets/img/itemSVG.svg
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar odio viverra phasellus iaculis consectetur. Ut vitae arcu, ornare vel. Cursus quis vel in facilisi ut mauris placerat aliquet egestas. Purus cursus morbi in mollis velit ornare ac porttitor. Accumsan interdum risus arcu felis bibendum fringilla etiam. Et faucibus lorem tristique pulvinar condimentum eleifend vulputate tortor. Dictumst.
+      .services-post--swiper__box
+        .services-post--swiper.swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              img(src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80", alt="")
+            .swiper-slide
+              img(src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80", alt="")
+            .swiper-slide
+              img(src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80", alt="")
+            .swiper-slide
+              img(src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80", alt="")
+            .swiper-slide
+              img(src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80", alt="")
+            .swiper-slide
+              img(src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80", alt="")
+            .swiper-slide
+              img(src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80", alt="")
+            .swiper-slide
+              img(src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80", alt="")
+        .services-post-swiper-prev
+          img(src="assets/img/prevServicesCat.svg", alt="")
+        .services-post-swiper-next
+          img(src="assets/img/nextServicesCat.svg", alt="")
+  section.about--third.about--four.services-post--four
+    .container
+      h2 С кем работаем
+      .about-cities
+        .about-city
+          img(src="assets/img/about-city.jpg", alt="")
+          p ЖК "LIFE"
+        .about-city
+          img(src="assets/img/about-city.jpg", alt="")
+          p ЖК "LIFE"
+        .about-city
+          img(src="assets/img/about-city.jpg", alt="")
+          p ЖК "LIFE"
+        .about-city
+          img(src="assets/img/about-city.jpg", alt="")
+          p ЖК "LIFE"
+  section.services-post--guarantee.guarantee
+    .container
+      form.guarantee-form
+        p Lorem ipsum dolor sit amet, consectetur.
+        .guarantee-form__box 
+          label
+            input(type="text" placeholder="Телефон*")
+          label
+            input(type="text" placeholder="E-mail*")
+          label
+            input(type="text" placeholder="Имя/Объект*")
+        input(type="submit" value="Отправить заявку")
+      .guarantee-description__box
+        p.guarantee-description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu vel leo iaculis consectetur luctus placerat proin sed. Faucibus neque tellus tincidunt in. Hendrerit proin morbi aliquam ut lacus magna nulla in. Leo mi egestas felis non velit et dictum ultricies tellus. Proin semper gravida fermentum id lorem a. Purus curabitur accumsan, sit aenean venenatis, gravida. Scelerisque elit sagittis sed praesent.
+        iframe(width='560' height='315' src='https://www.youtube.com/embed/0MEpPU3rWCk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+  section.services-post-other
+    .container
+      h2 Другие услуги
+      .services-post-other-items
+        a(href="").services-post-other-item
+          img(src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80", alt="")
+          p Обслуживание электрики
+          img(src="assets/img/servicesPostOtherArrow.svg", alt="")
+        a(href="").services-post-other-item
+          img(src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80", alt="")
+          p Обслуживание электрики
+          img(src="assets/img/servicesPostOtherArrow.svg", alt="")
+include components/footer.pug

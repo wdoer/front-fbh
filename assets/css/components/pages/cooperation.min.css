@@ -1,0 +1,35 @@
+.cooperation {
+    padding-bottom: 60px;
+}
+.cooperation h2 {
+    margin-bottom: 33px;
+}
+.cooperation__box {
+    display: flex;
+    max-width: 1102px;
+    margin: 0 auto; 
+
+    align-items: center;
+    justify-content: space-between;
+}
+.cooperation__box p {
+    max-width: 730px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 29px;
+    color: #1e1e1e;
+}
+.cooperation__box--even p {
+    margin-right: 30px;
+}
+.cooperation__box--odd p {
+    margin-left: 30px; 
+
+    order: 2;
+}
+.cooperation__box figure {
+    width: 100%;
+    max-width: 343px;
+    height: 246px;
+}

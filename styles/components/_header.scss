@@ -17,7 +17,7 @@
 		left: 0;
 		width: 314px;
 		height: 50px;
-		background: url("/assets/img/header-background.svg");
+		background: url("../img/header-background.svg");
 	}
 	&::after {
 		content: '';
@@ -27,7 +27,7 @@
 		width: 314px;
 		height: 50px;
 		transform: rotateY(180deg);
-		background: url("/assets/img/header-background.svg");
+		background: url("../img/header-background.svg");
 	}
 }
 .header__box {
@@ -57,24 +57,96 @@
 }
 .header-nav {
 	ul {
-		padding: 14px 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		li {
+			padding: 14px 0;
 			max-width: 150px;
 			width: 100%;
 			list-style-type: none;
+			position: relative;
 			a {
 				display: block;
 				text-align: center;
 				text-decoration: none;
-				font-family: Montserrat;
 				font-style: normal;
 				font-weight: bold;
 				font-size: 18px;
 				line-height: 22px;
 				color: #1e1e1e;
+			}
+			.header-nav__dropdown {
+				display: none;
+				top: 98%;
+				padding: 3px 15px 14px 30px;
+				max-width: 387px;
+				width: 387px;
+				min-height: 157px;
+				background-image: url('../img/headerDropdown.png');
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				z-index: 5;
+				& li {
+					padding: 0 0 0 0;
+					max-width: unset;
+					margin-bottom: 8px;
+					& .header-nav__submenu {
+						display: none;
+						position: absolute;
+						width: 100%;
+						min-width: 385px;
+						min-height: 150px;
+						background-image: url('../img/headerSubmenu.png');
+						background-size: contain;
+						background-repeat: no-repeat;
+						padding: 4.5px 50px 30px 12px;
+						left: 99%;
+						top: -2px;
+						& li:hover{
+							background: transparent;
+						}
+					}
+					&:hover {
+						background-position: bottom;
+						background-repeat: no-repeat;
+						background-image: url('../img/headerDropdownItem.png');
+						& .header-nav__submenu {
+							display: block;
+
+						}
+					}
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+				& > li {
+					padding-bottom: 2px;
+				}
+				& li:not(:first-child) {
+					& .header-nav__submenu {
+						background-image: url('../img/headerSubmenuSecond.png');
+						min-width: 300px;
+						min-height: 125px;
+						background-size: 100% 100%;
+						padding: 48px 11px 6px;
+						top: -50px;
+					}
+				}
+				& li a {				
+					text-align: left;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 22px;
+					color: #1E1E1E;
+				}
+			}
+			&:hover {
+				.header-nav__dropdown {
+					display: block;
+					position: absolute;
+				}
 			}
 		}
 	}

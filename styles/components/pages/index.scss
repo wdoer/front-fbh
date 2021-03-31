@@ -177,7 +177,7 @@ h2 {
 	margin: 0 15px 0;
 	&:hover {
 		.figure__stroke {
-			stroke-dasharray: 500 0;
+			stroke-dasharray: 500 0 !important;
 			animation-timing-function: ease-out;
 		}
 	}
@@ -329,7 +329,7 @@ h2 {
 	}
 }
 .guarantee {
-	background: url('/assets/img/guarantee-background.svg');
+	background: url('../img/guarantee-background.svg');
 	background-position: 0px 403px;
 	background-repeat-y: no-repeat;
 	padding-bottom: 111px;

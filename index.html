@@ -12,7 +12,7 @@
     <title>Start</title>
   </head>
   <body>
-    <header class="header"><img src="./assets/img/logo.svg" alt=""/>
+    <header class="header"><img src="assets/img/logo.svg" alt=""/>
       <div class="header__box">
         <div class="header-contact">
           <div class="header-contact__box">
@@ -31,7 +31,46 @@
           <ul>
             <li><a href="">О нас </a></li>
             <li><a href="">Портфолио</a></li>
-            <li><a href="">Услуги</a></li>
+            <li><a href="">Услуги</a>
+              <ul class="header-nav__dropdown">
+                <li><a href="">Проектирование</a>
+                  <ul class="header-nav__submenu">
+                    <li><a href="">Проектирование под ключ </a></li>
+                    <li><a href="">Конструктивное проектирование</a></li>
+                    <li><a href="">Дизайнерское проектирование</a></li>
+                    <li><a href="">Инженерное проектирование</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Строительство</a></li>
+                <li><a href="">Монтаж инженерных сетей</a>
+                  <ul class="header-nav__submenu">
+                    <li><a href="">Канализация</a></li>
+                    <li><a href="">Водопровод</a></li>
+                    <li><a href="">Отопление</a></li>
+                    <li><a href="">Электрика</a></li>
+                    <li><a href="">Системы Теплый пол</a></li>
+                    <li><a href="">Энергоэффективность домов</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Обслуживание инженерных сетей</a>
+                  <ul class="header-nav__submenu">
+                    <li><a href="">Канализация</a></li>
+                    <li><a href="">Водопровод</a></li>
+                    <li><a href="">Отопление</a></li>
+                    <li><a href="">Электрика</a></li>
+                    <li><a href="">Системы Теплый пол</a></li>
+                    <li><a href="">Энергоэффективность домов</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Услуги подрядной организации</a>
+                  <ul class="header-nav__submenu">
+                    <li><a href="">Проектирование домов, ЖК</a></li>
+                    <li><a href="">Согласование инженерных планов</a></li>
+                    <li><a href="">Помошь получения разрешительных документов</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
             <li><a href="">Вакансии</a></li>
             <li><a href="">Контакты</a></li>
           </ul>
@@ -44,7 +83,7 @@
   <section class="homebanner-slider">
     <div class="homebanner-swiper swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img class="swiper-slide--img" src="/assets/img/homebanner-slider.png" alt=""/>
+        <div class="swiper-slide"><img class="swiper-slide--img" src="assets/img/homebanner-slider.png" alt=""/>
           <div class="swiper-slide--container">
             <h1>Finance building Holding </h1>
             <p>Строительство, проектирование, монтаж и обслуживание инженерных сетей</p>
@@ -87,7 +126,7 @@
   <section class="construction">
     <div class="container">
       <h2>Строительство</h2>
-      <div class="construction-carousel__wrapper">
+      <div class="construction-carousel__wrapper" id="randomParentLine">
         <div class="construction-swiper swiper-container">
           <div class="swiper-wrapper">
             <div class="construction-item swiper-slide"><figure>
@@ -98,7 +137,7 @@
     </svg>
 </figure>
               <p class="construction-item--name">ЖК Life, Гостомель</p>
-              <p class="construction-item-e-city">г. Гостомель, ул. Остромирская, 49Г</p>
+              <p class="construction-item--city">г. Гостомель, ул. Остромирская, 49Г</p>
               <p class="construction-item--description">Начало строительства: 2017г. <br/> Ввод в эксплуатацию первой очереди 2019г. <br/> Вторая очередь на этапе строительства.</p><a class="construction-item--link" href="">Подробнее</a>
             </div>
             <div class="construction-item swiper-slide"><figure>
@@ -169,13 +208,14 @@
 
         </div>
       </div>
+      <div class="construction-link">Подробнее</div>
     </div>
   </section>
   <section class="about about--second">
     <div class="container">
       <h2>МОНТАЖ и обслуживание ИНЖЕНЕРНЫХ СЕТЕЙ</h2>
       <div class="about__box">
-        <div class="about__box-text">В капитальном строительстве на начальном этапе всегда стоит глубокая разработка и дальнейшая реализация проектного решения. Особенно такое касается инженерных сетей. Это аксиома, без выполнения которой немыслимо начинать дело. Именно грамотная и максимально проработанная проектно-сметная документация является той основой, от которой зависит успешная реализация задуманного. Ведь без оценочных сведений о стоимости будущего объекта нельзя реально рассчитать объем предстоящих капитальных вложений. <br/>Высококлассные специалисты нашей компании занимаются разработками внешних и внутренних проектов. <br/>Этим на высоком профессиональном уровне занимаются специалисты ТОВ "Фінансовий Будівельний Холдинг".<a class="about__box-link" href="">Подробнее</a></div>
+        <div class="about__box-text">В капитальном строительстве на начальном этапе всегда стоит глубокая разработка и дальнейшая реализация проектного решения. Особенно такое касается инженерных сетей. Это аксиома, без выполнения которой немыслимо начинать дело. Именно грамотная и максимально проработанная проектно-сметная документация является той основой, от которой зависит успешная реализация задуманного. Ведь без оценочных сведений о стоимости будущего объекта нельзя реально рассчитать объем предстоящих капитальных вложений. <br/>Высококлассные специалисты нашей компании занимаются разработками внешних и внутренних проектов. <br/>Этим на высоком профессиональном уровне занимаются специалисты ТОВ "Фінансовий Будівельний Холдинг".<a class="about__box-link" href="">Подробнее</a></div><a class="about__box-link--mobile about__box-link" href="">Подробнее</a>
         <div class="about__box-img"><figure>
     <svg class="figure__svg" viewBox="0 0 228 161">
         <defs><linearGradient id="grad" gradientUnits="userSpaceOnUse" x1="0" y1="100%" x2="100%" y2="0"><stop offset="0" stop-color="#1A2E58"/><stop offset="1" stop-color="#4370A7"/></linearGradient><mask id="image-mask"><path d="M216,161H12A12,12,0,0,1,0,149V43.87A12,12,0,0,1,8.48,32.4l102-31.32a12.06,12.06,0,0,1,7,0l102,31.32A12,12,0,0,1,228,43.87V149A12,12,0,0,1,216,161Z" fill="#fff" stroke="#000" stroke-width="6"/></mask></defs>
@@ -202,42 +242,42 @@
         </div>
       </div>
       <div class="about-features">
-        <div class="about-features-item"><img src="/assets/img/iconAboutFeaturesItem.svg" alt=""/>
+        <div class="about-features-item"><img src="assets/img/iconAboutFeaturesItem.svg" alt=""/>
           <p>Аварийное обслуживание</p>
         </div>
-        <div class="about-features-item"><img src="/assets/img/iconAboutFeaturesItem.svg" alt=""/>
+        <div class="about-features-item"><img src="assets/img/iconAboutFeaturesItem.svg" alt=""/>
           <p>Аварийное обслуживание</p>
         </div>
-        <div class="about-features-item"><img src="/assets/img/iconAboutFeaturesItem.svg" alt=""/>
+        <div class="about-features-item"><img src="assets/img/iconAboutFeaturesItem.svg" alt=""/>
           <p>Аварийное обслуживание</p>
         </div>
-        <div class="about-features-item"><img src="/assets/img/iconAboutFeaturesItem.svg" alt=""/>
+        <div class="about-features-item"><img src="assets/img/iconAboutFeaturesItem.svg" alt=""/>
           <p>Аварийное обслуживание</p>
         </div>
-        <div class="about-features-item"><img src="/assets/img/iconAboutFeaturesItem.svg" alt=""/>
+        <div class="about-features-item"><img src="assets/img/iconAboutFeaturesItem.svg" alt=""/>
           <p>Аварийное обслуживание</p>
         </div>
-        <div class="about-features-item"><img src="/assets/img/iconAboutFeaturesItem.svg" alt=""/>
+        <div class="about-features-item"><img src="assets/img/iconAboutFeaturesItem.svg" alt=""/>
           <p>Аварийное обслуживание</p>
         </div>
-        <div class="about-features-item"><img src="/assets/img/iconAboutFeaturesItem.svg" alt=""/>
+        <div class="about-features-item"><img src="assets/img/iconAboutFeaturesItem.svg" alt=""/>
           <p>Аварийное обслуживание</p>
         </div>
-        <div class="about-features-item"><img src="/assets/img/iconAboutFeaturesItem.svg" alt=""/>
+        <div class="about-features-item"><img src="assets/img/iconAboutFeaturesItem.svg" alt=""/>
           <p>Аварийное обслуживание</p>
         </div>
       </div>
       <div class="about-cities">
-        <div class="about-city"><img src="/assets/img/about-city.jpg" alt=""/>
+        <div class="about-city"><img src="assets/img/about-city.jpg" alt=""/>
           <p>ЖК "LIFE"</p>
         </div>
-        <div class="about-city"><img src="/assets/img/about-city.jpg" alt=""/>
+        <div class="about-city"><img src="assets/img/about-city.jpg" alt=""/>
           <p>ЖК "LIFE"</p>
         </div>
-        <div class="about-city"><img src="/assets/img/about-city.jpg" alt=""/>
+        <div class="about-city"><img src="assets/img/about-city.jpg" alt=""/>
           <p>ЖК "LIFE"</p>
         </div>
-        <div class="about-city"><img src="/assets/img/about-city.jpg" alt=""/>
+        <div class="about-city"><img src="assets/img/about-city.jpg" alt=""/>
           <p>ЖК "LIFE"</p>
         </div>
       </div>
@@ -246,7 +286,7 @@
   <section class="guarantee">
     <div class="container">
       <h2>гарантия качества</h2>
-      <div class="guarantee__box"><img src="/assets/img/guarantee-img.png" alt=""/>
+      <div class="guarantee__box"><img src="assets/img/guarantee-img.png" alt=""/>
         <div class="guarantee__box-info">
           <p>Наша компания получила Национальный сертификат</p>
           <p>«Выбор потребителя 2018» за получение права первенства компании среди потребителей товаров и услуг Украины, что подтверждено финансово-экономическими показателями предприятия от Всеукраинского отраслевых аналитического центра.</p>
@@ -273,16 +313,16 @@
     <div class="container">
       <h2>С кем работаем</h2>
       <div class="about-cities">
-        <div class="about-city"><img src="/assets/img/about-city.jpg" alt=""/>
+        <div class="about-city"><img src="assets/img/about-city.jpg" alt=""/>
           <p>ЖК "LIFE"</p>
         </div>
-        <div class="about-city"><img src="/assets/img/about-city.jpg" alt=""/>
+        <div class="about-city"><img src="assets/img/about-city.jpg" alt=""/>
           <p>ЖК "LIFE"</p>
         </div>
-        <div class="about-city"><img src="/assets/img/about-city.jpg" alt=""/>
+        <div class="about-city"><img src="assets/img/about-city.jpg" alt=""/>
           <p>ЖК "LIFE"</p>
         </div>
-        <div class="about-city"><img src="/assets/img/about-city.jpg" alt=""/>
+        <div class="about-city"><img src="assets/img/about-city.jpg" alt=""/>
           <p>ЖК "LIFE"</p>
         </div>
       </div><a class="about--btn" href="">Подробнее</a>
@@ -334,7 +374,7 @@
 </main>
 <footer class="footer">
   <div class="container">
-    <div class="footer-column"><img src="/assets/img/logo-light.svg" alt=""/>
+    <div class="footer-column"><img src="assets/img/logo-light.svg" alt=""/>
       <ul>
         <li><a href="">О нас</a></li>
         <li><a href="">Контакты</a></li>
@@ -342,9 +382,9 @@
         <li><a href="">Портфолио</a></li>
       </ul>
       <div class="footer-social">
-        <div class="footer-social--link"><img src="/assets/img/footer-inst.svg" alt=""/></div>
-        <div class="footer-social--link"><img src="/assets/img/footer-inst.svg" alt=""/></div>
-        <div class="footer-social--link"><img src="/assets/img/footer-inst.svg" alt=""/></div>
+        <div class="footer-social--link"><img src="assets/img/footer-inst.svg" alt=""/></div>
+        <div class="footer-social--link"><img src="assets/img/footer-inst.svg" alt=""/></div>
+        <div class="footer-social--link"><img src="assets/img/footer-inst.svg" alt=""/></div>
       </div>
     </div>
     <div class="footer-column"> 
@@ -360,6 +400,13 @@
     <div class="footer-column">
       <p>Наши контакты</p>
       <p>ФОП Lorem Ip. Sum. <br/> Київ, Lorem ipsum <br/> +38 (099) 999-99-99 <br/> lorem@ipsum.com <br/> Пн - Пт 9:00 - 18:00</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-social footer-social--mobile">
+      <div class="footer-social--link"><img src="assets/img/footer-inst.svg" alt=""/></div>
+      <div class="footer-social--link"><img src="assets/img/footer-inst.svg" alt=""/></div>
+      <div class="footer-social--link"><img src="assets/img/footer-inst.svg" alt=""/></div>
     </div>
   </div>
   <div class="container"><a href="">Лицензия № Sagittis ac libero elit amet consectetur mi.</a></div>

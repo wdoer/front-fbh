@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Bebas Neue';
-	src: url('/assets/fonts/BebasNeueCyr.ttf');
+	src: url('../fonts/BebasNeueCyr.ttf');
 }
 
 *,
@@ -30,3 +30,16 @@ body {
 @import 'components/pages/about-us';
 @import 'components/pages/contacts';
 @import 'components/pages/services';
+@import 'components/pages/services-category';
+@import 'components/pages/services-post';
+@import 'components/pages/service-osbb';
+@import 'components/pages/portfolio';
+@import 'components/pages/cooperation';
+@import 'components/pages/jobs-post';
+@import 'components/pages/jobs';
+// Подключение адаптива
+@media screen and (max-width: 1200px) {
+	@import 'components/media/header';
+	@import 'components/media/index-1200';
+	@import 'components/media/footer';
+}

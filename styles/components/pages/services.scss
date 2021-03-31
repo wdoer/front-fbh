@@ -22,7 +22,7 @@
         &:hover {
             .figure__stroke {
                 animation-timing-function: ease-out;
-                stroke-dasharray: 500 0;
+                stroke-dasharray: 500 0 !important;
             }
         }
         & figure {
